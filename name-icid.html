@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namen zu ICID machen</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Seitenleiste</h2>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="view-icid.html">Alle ICIDs ansehen</a></li>
+                <li><a href="add-icid.html">ICID hinzufügen</a></li>
+                <li><a href="name-icid.html">Namen zu ICID machen</a></li>
+                <li><a href="delete-icid.html">ICID löschen</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Namen zu ICID machen</h1>
+            <p>Hier können Sie einer ICID einen Namen geben.</p>
+
+            <div class="form-container">
+                <label for="icid_select">ICID auswählen:</label>
+                <select id="icid_select" required>
+                    <!-- Hier wird die Dropdown-Liste für ICIDs dynamisch befüllt -->
+                </select>
+
+                <label for="name_input">Name eingeben:</label>
+                <input type="text" id="name_input" placeholder="Name eingeben" required>
+
+                <button onclick="assignName()">Namen zu ICID hinzufügen</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/name-icid.js"></script>
+</body>
+</html>
